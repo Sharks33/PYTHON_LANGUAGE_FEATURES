@@ -1,0 +1,18 @@
+import collections
+
+A = collections.Counter([1, 2, 2])
+B = collections.Counter([2, 2, 3])
+print(A)
+# Counter({2: 2, 1: 1})
+print(B)
+# Counter({2: 2, 3: 1})
+print(A | B)
+# Counter({2: 2, 1: 1, 3: 1})
+print(A & B)
+# Counter({2: 2})
+print(A + B)
+# Counter({2: 4, 1: 1, 3: 1})
+print(A - B)
+# Counter({1: 1})
+print(B - A)
+# Counter({3: 1})
